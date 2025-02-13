@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useState, ReactNode, useEffect } from "react";
-import { AuthContextType, User } from "../types/User";
+import { AuthContextType, User } from '@/types/User';
 
 export const AuthContext = createContext<AuthContextType | undefined>(undefined);
 

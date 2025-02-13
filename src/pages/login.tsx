@@ -1,8 +1,8 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import Button from "../components/Button";
-import { useAuth } from "../hooks/useAuth";
+import Button from "@/components/Button";
+import { useAuth } from '@/hooks/useAuth';
 import { FormEvent, useState } from "react";
 
 export default function LoginPage() {
@@ -64,10 +64,10 @@ export default function LoginPage() {
                             />
                         </div>
                         {error && <p className="text-red-500 text-sm">{error}</p>}
+                        <Button type="submit" variant="primary">
+                          Log In
+                        </Button>
                     </form>
-                    <Button type="submit" onClick={handleSubmit} variant="primary">
-                        Log In
-                    </Button>
                 </div>
             ) : (
                 <Button onClick={handleLogout} variant="secondary">
