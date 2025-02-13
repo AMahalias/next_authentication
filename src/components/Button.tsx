@@ -5,6 +5,7 @@ import React, { ReactNode } from "react";
 interface ButtonProps {
     children: ReactNode;
     onClick: () => void;
+    type?: "button" | "submit";
     variant?: "primary" | "secondary" | "danger";
     size?: "small" | "medium" | "large";
     disabled?: boolean;

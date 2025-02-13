@@ -26,10 +26,13 @@ A simple authentication system built with **Next.js** and **TypeScript** using *
     ```
 
 ## File Structure
-- **`/context/UserContext.tsx`**: Contains the `UserProvider` and `useAuth` hook for managing user state.
-- **`/pages/login.tsx`**: Login form for email and name input.
-- **`/pages/dashboard.tsx`**: Displays user info and redirects to login if not authenticated.
-- **`/app/layout.tsx`**: Wraps app with `UserProvider` context.
+- **`/context/UserContext.tsx`**: Contains the `UserProvider`.
+- **`/components`**: Contains reusable UI components like `Button.tsx`.
+- **`/hooks/useAuth.ts`**: Custom hook to access authentication context.
+- **`/src/pages/_app.tsx`**: Wraps app with `UserProvider` to provide authentication context.
+- **`/src/pages/{index.tsx, dashboard.tsx, login.tsx}`**: Home, Dashboard, and Login pages for user authentication flow.
+- **`/styles/globals.css`**: Global styles.
+- **`/types/User.ts`**: TypeScript types for `User` and authentication context.
 
 ## Logic Overview
 
